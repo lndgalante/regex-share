@@ -1,0 +1,42 @@
+{
+  "name": "regex-share",
+  "displayName": "Regex Share",
+  "description": "Share your regular expression to RegExr",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.shareRegex"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.shareRegex",
+        "title": "Share your RegEx"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2",
+    "vscode": "^1.1.26"
+  },
+  "dependencies": {
+    "opn": "^5.4.0",
+    "randexp": "^0.5.3"
+  }
+}

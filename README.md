@@ -2,7 +2,9 @@
 
 Share your RegEx online from your VSCode
 
-## Idea
+## Rational
+
+I spent quite some time copying and pasting RegEx to [RegExr](https://regexr.com) to documentate my [katas](https://github.com/lndgalante/codewars-katas) repository so I wanted to speed up this process.
 
 1. Select your regex in your editor
 
