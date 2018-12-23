@@ -2,6 +2,26 @@
 
 Share your RegEx online from your VSCode
 
+## Features
+
+- Share your Regex online in [Regexr](https://regexr.com)
+- Generates some strings that matches your Regex
+
+## How to
+
+1. Select your regex
+
+2) Press the following sequence
+
+   - macOS: CMD + SHIFT + P
+   - Windows/Linux: CONTROL + SHIFT + P
+
+3. Find `Share your Regex` and press ENTER
+
+## To Do
+
+- [ ] Configure how many example strings through "regexShare.maxCases: 10"
+
 ## Rational
 
 I spent quite some time copying and pasting RegEx to [RegExr](https://regexr.com) to documentate my [katas](https://github.com/lndgalante/codewars-katas) repository so I wanted to speed up this process.
