@@ -6,9 +6,6 @@
   "engines": {
     "vscode": "^1.30.0"
   },
-  "categories": [
-    "Other"
-  ],
   "activationEvents": [
     "onCommand:extension.shareRegex"
   ],
@@ -17,7 +14,7 @@
     "commands": [
       {
         "command": "extension.shareRegex",
-        "title": "Share your RegEx"
+        "title": "RegEx Share: Share"
       }
     ]
   },
@@ -38,5 +35,17 @@
   "dependencies": {
     "opn": "^5.4.0",
     "randexp": "^0.5.3"
-  }
+  },
+  "keywords": [
+    "regex",
+    "regexr",
+    "share regex",
+    "share regex online",
+    "share regex in regexr"
+  ],
+  "categories": [
+    "RegEx",
+    "RegExp",
+    "Regular Expresions"
+  ]
 }
