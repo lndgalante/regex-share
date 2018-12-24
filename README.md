@@ -2,6 +2,8 @@
 Regex Share
 </h1>
 
+## Preview
+
 > Gif here
 
 ## Features

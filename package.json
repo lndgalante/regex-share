@@ -7,7 +7,10 @@
     "vscode": "^1.30.0"
   },
   "activationEvents": [
-    "onCommand:extension.shareRegex"
+    "onCommand:extension.shareRegex",
+    "onCommand:extension.setMaxExampleCases",
+    "onCommand:extension.setRegExrTool",
+    "onCommand:extension.setRegExrEngine"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -15,6 +18,18 @@
       {
         "command": "extension.shareRegex",
         "title": "RegEx Share: Share"
+      },
+      {
+        "command": "extension.setMaxExampleCases",
+        "title": "RegEx Share: Set max example cases"
+      },
+      {
+        "command": "extension.setRegExrTool",
+        "title": "RegEx Share: Set RegExr tool"
+      },
+      {
+        "command": "extension.setRegExrEngine",
+        "title": "RegEx Share: Set RegExr engine"
       }
     ]
   },
@@ -44,8 +59,6 @@
     "share regex in regexr"
   ],
   "categories": [
-    "RegEx",
-    "RegExp",
-    "Regular Expresions"
+    "Programming Languages"
   ]
 }
