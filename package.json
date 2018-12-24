@@ -31,6 +31,14 @@
         "command": "extension.setRegExrEngine",
         "title": "RegEx Share: Set RegExr engine"
       }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.shareRegex",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r",
+        "when": "editorTextFocus"
+      }
     ]
   },
   "scripts": {

@@ -1,13 +1,10 @@
-const isValidRegex = (text: string) => {
-  let isValid = true
-
+const isValidRegex = (pattern: string) => {
   try {
-    new RegExp(text)
-  } catch (error) {
-    isValid = false
+    ''.match(new RegExp(pattern))
+    return true
+  } catch (err) {
+    return false
   }
-
-  return isValid
 }
 
 export default isValidRegex
