@@ -1,6 +1,7 @@
 {
   "name": "regex-share",
   "publisher": "lndgalante0765",
+  "author": "Leonardo Galante <@lndgalante>",
   "displayName": "RegEx Share",
   "description": "Share your RegEx online to RegExr",
   "version": "0.0.2",
@@ -10,6 +11,8 @@
   "activationEvents": [
     "onCommand:extension.shareRegex"
   ],
+  "icon": "icon.png",
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=lndgalante0765.regex-share",
   "repository": {
     "type": "git",
     "url": "https://github.com/lndgalante/regex-share.git"
