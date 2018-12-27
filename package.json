@@ -7,29 +7,14 @@
     "vscode": "^1.30.0"
   },
   "activationEvents": [
-    "onCommand:extension.shareRegex",
-    "onCommand:extension.setMaxExampleCases",
-    "onCommand:extension.setRegExrTool",
-    "onCommand:extension.setRegExrEngine"
+    "onCommand:extension.shareRegex"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "extension.shareRegex",
-        "title": "RegEx Share: Share"
-      },
-      {
-        "command": "extension.setMaxExampleCases",
-        "title": "RegEx Share: Set max example cases"
-      },
-      {
-        "command": "extension.setRegExrTool",
-        "title": "RegEx Share: Set RegExr tool"
-      },
-      {
-        "command": "extension.setRegExrEngine",
-        "title": "RegEx Share: Set RegExr engine"
+        "title": "Share your RegEx"
       }
     ],
     "keybindings": [
@@ -39,7 +24,38 @@
         "mac": "cmd+shift+r",
         "when": "editorTextFocus"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "RegEx Share configuration",
+      "properties": {
+        "regexShare.maxExampleCases": {
+          "type": "number",
+          "default": 12,
+          "description": "Max number of examples that matches the RegEx"
+        },
+        "regexShare.engine": {
+          "type": "string",
+          "default": "js",
+          "enum": [
+            "js",
+            "pcre"
+          ],
+          "description": "RegExr currently supports JavaScript RegExp executed in your browser and PCRE via PHP"
+        },
+        "regexShare.tool": {
+          "type": "string",
+          "default": "explain",
+          "enum": [
+            "replace",
+            "list",
+            "details",
+            "explain"
+          ],
+          "description": "Tools provide different ways of working with or exploring your results"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
