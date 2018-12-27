@@ -8,6 +8,12 @@
 
 Install through VS Code extensions. Search for `RegEx Share`
 
+Can also be installed in VS Code: Launch VS Code Quick Open (CMD/CTRL + P), paste the following command, and press enter.
+
+```
+ext install lndgalante0765.regex-share
+```
+
 ### Features
 
 ✅ Visualize your RegEx online in [RegExr](https://regexr.com)
