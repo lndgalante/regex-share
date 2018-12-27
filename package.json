@@ -1,14 +1,20 @@
 {
   "name": "regex-share",
-  "displayName": "Regex Share",
-  "description": "Share your regular expression to RegExr",
-  "version": "0.0.1",
+  "publisher": "lndgalante0765",
+  "displayName": "RegEx Share",
+  "description": "Share your RegEx online to RegExr",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.30.0"
   },
   "activationEvents": [
     "onCommand:extension.shareRegex"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lndgalante/regex-share.git"
+  },
+  "license": "MIT",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
