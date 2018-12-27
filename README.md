@@ -2,6 +2,8 @@
 
 ### Preview
 
+![RegEx Share](./static/regex-share.gif)
+
 ### Installation
 
 Install through VS Code extensions. Search for `RegEx Share`
