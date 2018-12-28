@@ -11,7 +11,7 @@
   "activationEvents": [
     "onCommand:extension.shareRegex"
   ],
-  "icon": "icon.png",
+  "icon": "static/icon.png",
   "homepage": "https://marketplace.visualstudio.com/items?itemName=lndgalante0765.regex-share",
   "repository": {
     "type": "git",

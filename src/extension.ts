@@ -27,7 +27,7 @@ export function activate(context: vscode.ExtensionContext) {
     const { maxExampleCases, tool, engine } = vscode.workspace.getConfiguration('regexShare')
 
     // Generate example strings that matches the regex
-    const [, regex, flags = 'm'] = textSelected.split('/')
+    const [, regex, flags = 'g'] = textSelected.split('/')
     const randexpRegex = Array.from({ length: maxExampleCases }, () => new RandExp(regex, flags).gen())
     const regexWithoutRepetitions = [...new Set(randexpRegex)]
     const matchingRegex = regexWithoutRepetitions.join('\n')
