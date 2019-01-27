@@ -27,14 +27,15 @@ export function activate(context: vscode.ExtensionContext) {
     const { maxExampleCases, tool, engine } = vscode.workspace.getConfiguration('regexShare')
 
     // Generate example strings that matches the regex
-    const [, regex, flags = 'g'] = textSelected.split('/')
+    let [, regex, flags] = textSelected.split('/')
+    if (!flags) flags = 'gm'
     const randexpRegex = Array.from({ length: maxExampleCases }, () => new RandExp(regex, flags).gen())
     const regexWithoutRepetitions = [...new Set(randexpRegex)]
     const matchingRegex = regexWithoutRepetitions.join('\n')
 
     // Generate url to be open
     const baseUrl = 'https://regexr.com'
-    const url = `${baseUrl}/?expression=${textSelected}&text=${matchingRegex}&tool=${tool}&engine=${engine}`
+    const url = `${baseUrl}/?expression=/${regex}/${flags}&text=${matchingRegex}&tool=${tool}&engine=${engine}`
 
     // Open url in user default browser and display a message
     opn(url)
