@@ -4,7 +4,7 @@
   "author": "Leonardo Galante <@lndgalante>",
   "displayName": "RegEx Share",
   "description": "Share your RegEx online to RegExr",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.30.0"
   },
